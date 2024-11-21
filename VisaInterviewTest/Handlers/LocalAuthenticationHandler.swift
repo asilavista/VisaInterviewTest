@@ -17,8 +17,7 @@ class LocalAuthenticationHandler {
                 completionSuccess(success, authenticationError)
             }
         } else {
-            completionSuccess(true, nil)
-//            completionSuccess(false, NSError(domain: "No biometrics found", code: -1, userInfo: nil))
+            completionSuccess(false, NSError(domain: "No biometrics found", code: -1, userInfo: nil))
         }
     }
 }
