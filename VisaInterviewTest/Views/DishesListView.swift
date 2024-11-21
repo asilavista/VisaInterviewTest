@@ -25,14 +25,7 @@ struct DishesListView<T:Codable>: View {
                 DishThumbnailView(dish: dish)
                     .padding(.vertical, 12)
                     .onTapGesture {
-                        localAuth.authenticate { success, error in
-                            if let error = error {
-                                authError = error
-                                return
-                            } else {
-                                selectedDish = dish
-                            }
-                        }
+                        didSelect(dish: dish)
                     }
             }
             .alert(isPresented: Binding($authError)) {
@@ -45,6 +38,20 @@ struct DishesListView<T:Codable>: View {
             .navigationTitle("Dishes List")
         } else {
             Text("Unsupported model type")
+        }
+    }
+    
+    private func didSelect(dish:Dish) {
+        Task.detached {
+            let authenticationResult = await localAuth.authenticate()
+            await MainActor.run {
+                if let error = authenticationResult.error {
+                    self.authError = error
+                    return
+                }
+                
+                self.selectedDish = dish
+            }
         }
     }
 }

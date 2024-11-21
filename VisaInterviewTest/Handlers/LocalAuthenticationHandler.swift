@@ -8,16 +8,18 @@
 import LocalAuthentication
 
 class LocalAuthenticationHandler {
-    func authenticate(completionSuccess: @escaping (Bool, Error?) -> ()) {
+    func authenticate() async -> (success:Bool, error:Error?) {
         let context = LAContext()
         var error: NSError?
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "We need to unlock your data."
+        guard context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
+            return (false, NSError(domain: "No biometrics found", code: -1, userInfo: nil))
+        }
+        
+        let reason = "We need to unlock your data."
+        return await withCheckedContinuation { continuation in
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
-                completionSuccess(success, authenticationError)
+                return continuation.resume(returning: (success, authenticationError))
             }
-        } else {
-            completionSuccess(false, NSError(domain: "No biometrics found", code: -1, userInfo: nil))
         }
     }
 }
