@@ -66,6 +66,7 @@ class NetworkManager {
     }
 }
 
+// Endpoints mappers:
 extension NetworkManager {
     var dishList:EndpointsMapper<[Dish]> { EndpointsMapper(endpoint: .dishes) }
 }
