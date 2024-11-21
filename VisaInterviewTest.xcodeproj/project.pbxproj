@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B53DFF52CEF3D5500ACAA48 /* VisaInterviewTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B53DFF42CEF3D5500ACAA48 /* VisaInterviewTestApp.swift */; };
+		5B53DFF72CEF3D5500ACAA48 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B53DFF62CEF3D5500ACAA48 /* HomeScreenView.swift */; };
+		5B53DFF92CEF3D5900ACAA48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B53DFF82CEF3D5900ACAA48 /* Assets.xcassets */; };
+		5B53DFFC2CEF3D5900ACAA48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B53DFFB2CEF3D5900ACAA48 /* Preview Assets.xcassets */; };
+		5B53E0082CEF786B00ACAA48 /* LocalAuthenticationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B53E0072CEF786B00ACAA48 /* LocalAuthenticationHandler.swift */; };
+		5BEB9C552CEF92BE008F168C /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C542CEF92BE008F168C /* Endpoints.swift */; };
+		5BEB9C572CEF92D3008F168C /* EndpointsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C562CEF92D3008F168C /* EndpointsMapper.swift */; };
+		5BEB9C592CEF9304008F168C /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C582CEF9304008F168C /* Dish.swift */; };
+		5BEB9C5C2CEF932B008F168C /* DishEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C5B2CEF932B008F168C /* DishEx.swift */; };
+		5BEB9C5F2CEF93C4008F168C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C5E2CEF93C4008F168C /* NetworkError.swift */; };
+		5BEB9C612CEF93DF008F168C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C602CEF93DF008F168C /* NetworkManager.swift */; };
+		5BEB9C642CEF944A008F168C /* JsonLoaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C632CEF944A008F168C /* JsonLoaderViewModel.swift */; };
+		5BEB9C662CEF9470008F168C /* JsonLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C652CEF9470008F168C /* JsonLoaderView.swift */; };
+		5BEB9C682CEF94A0008F168C /* DishesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C672CEF94A0008F168C /* DishesListView.swift */; };
+		5BEB9C6B2CEF94D2008F168C /* BindingEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C6A2CEF94D2008F168C /* BindingEx.swift */; };
+		5BEB9C6D2CEF94E3008F168C /* DishThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C6C2CEF94E3008F168C /* DishThumbnailView.swift */; };
+		5BEB9C6F2CEF9506008F168C /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C6E2CEF9506008F168C /* ImageCacheManager.swift */; };
+		5BEB9C712CEF952D008F168C /* NSCacheEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C702CEF952D008F168C /* NSCacheEx.swift */; };
+		5BEB9C732CEF9542008F168C /* AsyncCacheImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C722CEF9542008F168C /* AsyncCacheImage.swift */; };
+		5BEB9C752CEF9563008F168C /* DishPropertyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C742CEF9563008F168C /* DishPropertyTextView.swift */; };
+		5BEB9C772CEF9577008F168C /* DishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB9C762CEF9577008F168C /* DishView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B53DFF12CEF3D5500ACAA48 /* VisaInterviewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisaInterviewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B53DFF42CEF3D5500ACAA48 /* VisaInterviewTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisaInterviewTestApp.swift; sourceTree = "<group>"; };
+		5B53DFF62CEF3D5500ACAA48 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		5B53DFF82CEF3D5900ACAA48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B53DFFB2CEF3D5900ACAA48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5B53E0072CEF786B00ACAA48 /* LocalAuthenticationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationHandler.swift; sourceTree = "<group>"; };
+		5BEB9C542CEF92BE008F168C /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		5BEB9C562CEF92D3008F168C /* EndpointsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsMapper.swift; sourceTree = "<group>"; };
+		5BEB9C582CEF9304008F168C /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		5BEB9C5B2CEF932B008F168C /* DishEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishEx.swift; sourceTree = "<group>"; };
+		5BEB9C5E2CEF93C4008F168C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		5BEB9C602CEF93DF008F168C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5BEB9C632CEF944A008F168C /* JsonLoaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoaderViewModel.swift; sourceTree = "<group>"; };
+		5BEB9C652CEF9470008F168C /* JsonLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoaderView.swift; sourceTree = "<group>"; };
+		5BEB9C672CEF94A0008F168C /* DishesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesListView.swift; sourceTree = "<group>"; };
+		5BEB9C6A2CEF94D2008F168C /* BindingEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingEx.swift; sourceTree = "<group>"; };
+		5BEB9C6C2CEF94E3008F168C /* DishThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishThumbnailView.swift; sourceTree = "<group>"; };
+		5BEB9C6E2CEF9506008F168C /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		5BEB9C702CEF952D008F168C /* NSCacheEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheEx.swift; sourceTree = "<group>"; };
+		5BEB9C722CEF9542008F168C /* AsyncCacheImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCacheImage.swift; sourceTree = "<group>"; };
+		5BEB9C742CEF9563008F168C /* DishPropertyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPropertyTextView.swift; sourceTree = "<group>"; };
+		5BEB9C762CEF9577008F168C /* DishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B53DFEE2CEF3D5500ACAA48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B53DFE82CEF3D5500ACAA48 = {
+			isa = PBXGroup;
+			children = (
+				5B53DFF32CEF3D5500ACAA48 /* VisaInterviewTest */,
+				5B53DFF22CEF3D5500ACAA48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B53DFF22CEF3D5500ACAA48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B53DFF12CEF3D5500ACAA48 /* VisaInterviewTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B53DFF32CEF3D5500ACAA48 /* VisaInterviewTest */ = {
+			isa = PBXGroup;
+			children = (
+				5B53DFF42CEF3D5500ACAA48 /* VisaInterviewTestApp.swift */,
+				5BEB9C532CEF92AF008F168C /* Networking */,
+				5B53E0062CEF784D00ACAA48 /* Handlers */,
+				5B53E0032CEF3D7A00ACAA48 /* Views */,
+				5B53E0042CEF3D8300ACAA48 /* Model */,
+				5B53E0052CEF3D8B00ACAA48 /* ViewModel */,
+				5BEB9C692CEF94BA008F168C /* Extensions */,
+				5B53DFF82CEF3D5900ACAA48 /* Assets.xcassets */,
+				5B53DFFA2CEF3D5900ACAA48 /* Preview Content */,
+			);
+			path = VisaInterviewTest;
+			sourceTree = "<group>";
+		};
+		5B53DFFA2CEF3D5900ACAA48 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5B53DFFB2CEF3D5900ACAA48 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5B53E0032CEF3D7A00ACAA48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B53DFF62CEF3D5500ACAA48 /* HomeScreenView.swift */,
+				5BEB9C652CEF9470008F168C /* JsonLoaderView.swift */,
+				5BEB9C672CEF94A0008F168C /* DishesListView.swift */,
+				5BEB9C6C2CEF94E3008F168C /* DishThumbnailView.swift */,
+				5BEB9C722CEF9542008F168C /* AsyncCacheImage.swift */,
+				5BEB9C742CEF9563008F168C /* DishPropertyTextView.swift */,
+				5BEB9C762CEF9577008F168C /* DishView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B53E0042CEF3D8300ACAA48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BEB9C5D2CEF9339008F168C /* Dish */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B53E0052CEF3D8B00ACAA48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BEB9C632CEF944A008F168C /* JsonLoaderViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B53E0062CEF784D00ACAA48 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				5B53E0072CEF786B00ACAA48 /* LocalAuthenticationHandler.swift */,
+				5BEB9C6E2CEF9506008F168C /* ImageCacheManager.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		5BEB9C532CEF92AF008F168C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5BEB9C602CEF93DF008F168C /* NetworkManager.swift */,
+				5BEB9C542CEF92BE008F168C /* Endpoints.swift */,
+				5BEB9C562CEF92D3008F168C /* EndpointsMapper.swift */,
+				5BEB9C5E2CEF93C4008F168C /* NetworkError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5BEB9C5D2CEF9339008F168C /* Dish */ = {
+			isa = PBXGroup;
+			children = (
+				5BEB9C582CEF9304008F168C /* Dish.swift */,
+				5BEB9C5B2CEF932B008F168C /* DishEx.swift */,
+			);
+			path = Dish;
+			sourceTree = "<group>";
+		};
+		5BEB9C692CEF94BA008F168C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5BEB9C6A2CEF94D2008F168C /* BindingEx.swift */,
+				5BEB9C702CEF952D008F168C /* NSCacheEx.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B53DFF02CEF3D5500ACAA48 /* VisaInterviewTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B53DFFF2CEF3D5900ACAA48 /* Build configuration list for PBXNativeTarget "VisaInterviewTest" */;
+			buildPhases = (
+				5B53DFED2CEF3D5500ACAA48 /* Sources */,
+				5B53DFEE2CEF3D5500ACAA48 /* Frameworks */,
+				5B53DFEF2CEF3D5500ACAA48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisaInterviewTest;
+			productName = VisaInterviewTest;
+			productReference = 5B53DFF12CEF3D5500ACAA48 /* VisaInterviewTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B53DFE92CEF3D5500ACAA48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					5B53DFF02CEF3D5500ACAA48 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 5B53DFEC2CEF3D5500ACAA48 /* Build configuration list for PBXProject "VisaInterviewTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B53DFE82CEF3D5500ACAA48;
+			productRefGroup = 5B53DFF22CEF3D5500ACAA48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B53DFF02CEF3D5500ACAA48 /* VisaInterviewTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B53DFEF2CEF3D5500ACAA48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B53DFFC2CEF3D5900ACAA48 /* Preview Assets.xcassets in Resources */,
+				5B53DFF92CEF3D5900ACAA48 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B53DFED2CEF3D5500ACAA48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BEB9C612CEF93DF008F168C /* NetworkManager.swift in Sources */,
+				5BEB9C642CEF944A008F168C /* JsonLoaderViewModel.swift in Sources */,
+				5BEB9C6F2CEF9506008F168C /* ImageCacheManager.swift in Sources */,
+				5BEB9C5C2CEF932B008F168C /* DishEx.swift in Sources */,
+				5BEB9C752CEF9563008F168C /* DishPropertyTextView.swift in Sources */,
+				5BEB9C5F2CEF93C4008F168C /* NetworkError.swift in Sources */,
+				5BEB9C662CEF9470008F168C /* JsonLoaderView.swift in Sources */,
+				5BEB9C572CEF92D3008F168C /* EndpointsMapper.swift in Sources */,
+				5B53E0082CEF786B00ACAA48 /* LocalAuthenticationHandler.swift in Sources */,
+				5BEB9C6D2CEF94E3008F168C /* DishThumbnailView.swift in Sources */,
+				5BEB9C6B2CEF94D2008F168C /* BindingEx.swift in Sources */,
+				5B53DFF72CEF3D5500ACAA48 /* HomeScreenView.swift in Sources */,
+				5BEB9C592CEF9304008F168C /* Dish.swift in Sources */,
+				5BEB9C732CEF9542008F168C /* AsyncCacheImage.swift in Sources */,
+				5BEB9C712CEF952D008F168C /* NSCacheEx.swift in Sources */,
+				5BEB9C552CEF92BE008F168C /* Endpoints.swift in Sources */,
+				5BEB9C682CEF94A0008F168C /* DishesListView.swift in Sources */,
+				5B53DFF52CEF3D5500ACAA48 /* VisaInterviewTestApp.swift in Sources */,
+				5BEB9C772CEF9577008F168C /* DishView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5B53DFFD2CEF3D5900ACAA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B53DFFE2CEF3D5900ACAA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B53E0002CEF3D5900ACAA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VisaInterviewTest/Preview Content\"";
+				DEVELOPMENT_TEAM = BK47X2Q6R3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asiGivati.VisaInterviewTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B53E0012CEF3D5900ACAA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VisaInterviewTest/Preview Content\"";
+				DEVELOPMENT_TEAM = BK47X2Q6R3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asiGivati.VisaInterviewTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B53DFEC2CEF3D5500ACAA48 /* Build configuration list for PBXProject "VisaInterviewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B53DFFD2CEF3D5900ACAA48 /* Debug */,
+				5B53DFFE2CEF3D5900ACAA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B53DFFF2CEF3D5900ACAA48 /* Build configuration list for PBXNativeTarget "VisaInterviewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B53E0002CEF3D5900ACAA48 /* Debug */,
+				5B53E0012CEF3D5900ACAA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B53DFE92CEF3D5500ACAA48 /* Project object */;
+}
