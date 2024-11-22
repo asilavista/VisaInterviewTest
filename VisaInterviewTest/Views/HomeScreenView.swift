@@ -9,8 +9,10 @@ import SwiftUI
 
 struct HomeScreenView: View {
     var body: some View {
-        JsonLoaderView(\.dishList) { decodedDishes in
-            DishesListView(dishes:decodedDishes)
+        NavigationView {
+            JsonLoaderView(\.dishList) { decodedDishes in
+                DishesListView(dishes:decodedDishes)
+            }
         }
     }
 }
