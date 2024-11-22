@@ -37,6 +37,7 @@
 		5B53DFF82CEF3D5900ACAA48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B53DFFB2CEF3D5900ACAA48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B53E0072CEF786B00ACAA48 /* LocalAuthenticationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationHandler.swift; sourceTree = "<group>"; };
+		5B8C940A2CF09759009EB1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5BEB9C542CEF92BE008F168C /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		5BEB9C562CEF92D3008F168C /* EndpointsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsMapper.swift; sourceTree = "<group>"; };
 		5BEB9C582CEF9304008F168C /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		5B53DFF32CEF3D5500ACAA48 /* VisaInterviewTest */ = {
 			isa = PBXGroup;
 			children = (
+				5B8C940A2CF09759009EB1CE /* Info.plist */,
 				5B53DFF42CEF3D5500ACAA48 /* VisaInterviewTestApp.swift */,
 				5BEB9C532CEF92AF008F168C /* Networking */,
 				5B53E0062CEF784D00ACAA48 /* Handlers */,
@@ -396,6 +398,8 @@
 				DEVELOPMENT_TEAM = BK47X2Q6R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisaInterviewTest/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -425,6 +429,8 @@
 				DEVELOPMENT_TEAM = BK47X2Q6R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisaInterviewTest/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
