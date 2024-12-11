@@ -10,9 +10,9 @@ import Combine
 
 struct DishesListView<T:Codable>: View {
     @EnvironmentObject private var vm:JsonLoaderViewModel<T>
-    @State private var selectedDish:Dish?
+    @State private var encryptedDataKeyName:String?
     @State private var authError:Error?
-    private var localAuth = LocalAuthenticationHandler()
+    private var localAuth:LocalAuthenticationHandler { .shared }
     
     private var dishes:T
     init(dishes:T) {
@@ -31,8 +31,8 @@ struct DishesListView<T:Codable>: View {
             .alert(isPresented: Binding($authError)) {
                 Alert(title: Text("Authentication Error"), message: authError != nil ? Text(authError!.localizedDescription) : nil, dismissButton: .default(Text("Got it!")))
             }
-            .popover(item: $selectedDish) { dish in
-                DishView(dish: dish)
+            .popover(item: $encryptedDataKeyName) { encryptedDataKeyName in
+                DishView(dataKeyName: encryptedDataKeyName)
             }
             .listStyle(PlainListStyle())
             .navigationTitle("Dishes List")
@@ -43,15 +43,25 @@ struct DishesListView<T:Codable>: View {
     
     private func didSelect(dish:Dish) {
         Task.detached {
-            let authenticationResult = await localAuth.authenticate()
-            await MainActor.run {
-                if let error = authenticationResult.error {
-                    self.authError = error
-                    return
+            let encryptionKey = "dish_\(dish.id)_encryption_key"
+            let encryptedResult = await localAuth.encryptWithBiometric(object: dish, for: encryptionKey)
+                switch encryptedResult {
+                case .failure(let error):
+                    await MainActor.run {
+                        self.authError = error
+                    }
+                    
+                case .success(_):
+                    let authenticationResult = await localAuth.authenticate()
+                    await MainActor.run {
+                        if let error = authenticationResult.error {
+                            self.authError = error
+                            return
+                        }
+                        
+                        self.encryptedDataKeyName = encryptionKey
+                    }
                 }
-                
-                self.selectedDish = dish
-            }
         }
     }
 }
